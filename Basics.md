@@ -12,4 +12,20 @@
     2. fulfilled: meaning that the operation completed successfully.
 
     3. rejected: meaning that the operation failed.
+Ex:
+  
+    var promise1 = new Promise(function(resolve, reject) {
+      isDbOperationCompleted = false;
+      if (isDbOperationCompleted) {
+          resolve('Completed');
+      } else {
+          reject('Not completed');
+      }
+    });
 
+    promise1.then(function(result) {
+        console.log(result); //Output : Completed //fulfillment
+    }).catch(function(error) { //rejection
+        console.log(error); //if isDbOperationCompleted=FALSE                                                  
+        //Output : Not Completed
+    })
