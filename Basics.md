@@ -45,9 +45,14 @@ EX:
     }
     
 **Scope:** Scope means variable access.
-Local Scope: Inside the box
 
-Global Scope: Outside the box
+Local Scope: Inside the box(block scope), 
+      let -> value can reassign
+      
+
+Global Scope: Outside the box.
+      var -> value can reassign, 
+      const -> value can not reassign
 
 **Hoisting:**
 
