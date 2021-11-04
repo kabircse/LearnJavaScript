@@ -43,3 +43,24 @@ EX:
             };
         }
     }
+    
+**Scope:** Scope means variable access.
+Local Scope: Inside the box
+
+Global Scope: Outside the box
+
+**Hoisting:**
+
+**Closures:** A closure is simply a function inside another function that has access to the outer function variable.
+Ex:
+    
+    const first = () => {
+      const greet = 'Hi';
+      const second = () => {
+        const name = 'Md. Kabir';
+        console.log(greet+ " " + name)
+      }
+      return second;
+    }
+    const newFunc = first()
+    newFunc();
